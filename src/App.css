@@ -1,0 +1,141 @@
+/* General styling */
+body {
+  font-family: 'Verdana';
+  background-color: #f1f1f1; /* Slightly lighter background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Flexbox for proper alignment */
+.grid {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  padding: 20px; /* Added padding for consistent spacing */
+}
+
+.side-component {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px; /* Added margin for spacing */
+}
+
+.side-component button {
+  background-color: #495057;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.side-component img {
+  max-width: 70%; /* Ensure image scales correctly */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.side-component button:hover {
+  background-color: #6c757d;
+}
+
+.side-component p {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #e0e0e0; /* Light color for better readability */
+}
+
+/* Main form styling */
+form {
+  background-color: #ffffff;
+  padding: 170px; /* Adjusted padding for a balanced look */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 3;
+  padding-top: 50px;
+  max-width: 100%;
+  margin-left: 0; /* Adjusted margin for better alignment */
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  color: #333333;
+}
+
+/* Stylish input and textarea styling */
+input[type="text"],
+textarea {
+  height: 50px; /* Adjusted height for consistency */
+  max-width: 100%;
+  border-radius: 5px; /* Less rounded for a modern look */
+  border: 1px solid #ccc;
+  padding: 12px;
+  background: linear-gradient(to top left, #f9f9f9, #eaeaea);
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+textarea {
+  height: 100px; /* Fixed height */
+  background: linear-gradient(to top left, #f9f9f9, #eaeaea);
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #abb9c9;
+  color: #ffffff;
+  border: navajowhite;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Additional text styling */
+.text-center p {
+  font-size: 18px;
+  color: #333333;
+}
+
+.text-lg {
+  font-size: 24px;
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+  border-radius: 10px;
+}
