@@ -86,19 +86,9 @@ export default function ConnectPESChatbot() {
                 />
               </div>
               <div className="w-full">
-                <label className="block text-sm font-medium text-gray-700">The organization you want additional information for:</label>
+                <label className="block text-sm font-medium text-gray-700">The organization you want additional information for and the information. Please elaborate on the same:</label>
                 <input 
                   name="company" 
-                  value={formData.company} 
-                  onChange={handleChange} 
-                  required 
-                  className="mt-1 p-4 w-full border rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                />
-              </div>
-              <div className="w-full">
-                <label className="block text-sm font-medium text-gray-700">The information that you want. Please elaborate on the same:</label>
-                <input 
-                  name="info" 
                   value={formData.company} 
                   onChange={handleChange} 
                   required 
