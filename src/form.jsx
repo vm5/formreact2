@@ -59,7 +59,7 @@ export default function ConnectPESChatbot() {
           </button>
           <div className="mt-6 text-gray-400 text-sm leading-relaxed">
             <img src="/nucleus-removebg-preview.png" alt="NUCLEUS" className="rounded-lg shadow-md w-full max-w-xs mx-auto" />
-            <p className="mt-4">Welcome to nucleusFUSION! This form helps you connect with mentors if you require additional information about your preferred organization. Please enter the following details:</p>
+            <p className="mt-4">Welcome to nucleusFUSION! This form helps you connect with mentors if you require generic information about your preferred organization. Please enter the following details:</p>
           </div>
         </div>
         <div className="flex flex-col items-center flex-1 p-4 md:p-8 max-w-2xl mx-auto bg-gray-100 shadow-lg rounded-lg text-gray-900">
