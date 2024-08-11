@@ -69,6 +69,7 @@ form {
   margin-left: 0;
   display: flex;
   flex-direction: column;
+  margin-top:50px;
 }
 
 label {
