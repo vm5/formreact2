@@ -43,8 +43,8 @@ export default function ConnectPESChatbot() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-gray-900 text-white">
-      <div className="grid md:grid-cols-[260px_1fr] min-h-screen w-full">
+    <div className="min-h-screen w-full bg-gray-900 text-white flex flex-col items-center justify-center">
+      <div className="grid md:grid-cols-[260px_1fr] grid-cols-1 min-h-screen w-full">
         <div className="hidden md:flex flex-col side-component p-6 bg-gray-800 shadow-lg rounded-lg">
           <button className="flex items-center justify-start w-full gap-2 px-3 py-2 text-left hover:bg-gray-700 rounded-lg">
             <a 
@@ -58,11 +58,11 @@ export default function ConnectPESChatbot() {
             </a>
           </button>
           <div className="mt-6 text-gray-400 text-sm leading-relaxed">
-            <img src="/nucleus-removebg-preview.png" alt="NUCLEUS" className="rounded-lg shadow-md" />
+            <img src="/nucleus-removebg-preview.png" alt="NUCLEUS" className="rounded-lg shadow-md w-full max-w-xs mx-auto" />
             <p className="mt-4">Welcome to nucleusFUSION! This form helps you connect with mentors if you require additional information about your preferred organization. Please enter the following details:</p>
           </div>
         </div>
-        <div className="flex flex-col items-start flex-1 p-8 max-w-2xl mx-auto bg-gray-100 shadow-lg rounded-lg text-gray-900">
+        <div className="flex flex-col items-center flex-1 p-4 md:p-8 max-w-2xl mx-auto bg-gray-100 shadow-lg rounded-lg text-gray-900">
           {step === 1 ? (
             <form className="space-y-6 w-full" onSubmit={handleSubmit}>
               <div className="w-full">
@@ -73,7 +73,7 @@ export default function ConnectPESChatbot() {
                   onChange={handleChange} 
                   required 
                   className="mt-1 p-4 w-full border-none shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                  style={{borderRadius:'50px', height: '60px',width:'900px' }} // Larger input and no border radius
+                  style={{ borderRadius: '50px', height: '60px' }} // Larger input and no border radius
                 />
               </div>
               <div className="w-full">
@@ -84,7 +84,7 @@ export default function ConnectPESChatbot() {
                   onChange={handleChange} 
                   required 
                   className="mt-1 p-4 w-full border-none shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                  style={{ borderRadius: '50px', height: '60px',width:'900px' }} // Larger input and no border radius
+                  style={{ borderRadius: '50px', height: '60px' }} // Larger input and no border radius
                 />
               </div>
               <div className="w-full">
@@ -95,7 +95,7 @@ export default function ConnectPESChatbot() {
                   onChange={handleChange} 
                   required 
                   className="mt-1 p-4 w-full border-none shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                  style={{ borderRadius: '50px', height: '60px',width:'900px' }} // Larger input and no border radius
+                  style={{ borderRadius: '50px', height: '60px' }} // Larger input and no border radius
                 />
               </div>
               <div className="w-full">
@@ -106,7 +106,7 @@ export default function ConnectPESChatbot() {
                   onChange={handleChange} 
                   required 
                   className="mt-1 p-4 w-full border-none shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                  style={{ borderRadius: '50px', height: '60px',width:'900px' }} // Larger input and no border radius
+                  style={{ borderRadius: '50px', height: '60px' }} // Larger input and no border radius
                 />
               </div>
               <button 
