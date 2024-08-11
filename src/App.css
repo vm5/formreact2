@@ -10,8 +10,6 @@ body {
 .grid {
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
-  padding: 20px;
 }
 
 /* Side component styling */
@@ -70,7 +68,7 @@ form {
   display: flex;
   flex-direction: column;
   margin-top:0;
-  margin-bottm:0;
+
 }
 
 label {
