@@ -73,7 +73,7 @@ export default function ConnectPESChatbot() {
                   onChange={handleChange} 
                   required 
                   className="mt-1 p-4 w-full border-none shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                  style={{ borderRadius: '50px', height: '60px' }} // Larger input and no border radius
+                  style={{ borderRadius: '50px', height: '60px',width:'500px' }} // Larger input and no border radius
                 />
               </div>
               <div className="w-full">
@@ -84,7 +84,7 @@ export default function ConnectPESChatbot() {
                   onChange={handleChange} 
                   required 
                   className="mt-1 p-4 w-full border-none shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                  style={{ borderRadius: '50px', height: '60px' }} // Larger input and no border radius
+                  style={{ borderRadius: '50px', height: '60px',width:'500px' }} // Larger input and no border radius
                 />
               </div>
               <div className="w-full">
@@ -95,7 +95,7 @@ export default function ConnectPESChatbot() {
                   onChange={handleChange} 
                   required 
                   className="mt-1 p-4 w-full border-none shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                  style={{ borderRadius: '50px', height: '60px' }} // Larger input and no border radius
+                  style={{ borderRadius: '50px', height: '60px',width:'500px' }} // Larger input and no border radius
                 />
               </div>
               <div className="w-full">
