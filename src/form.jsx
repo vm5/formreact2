@@ -34,7 +34,7 @@ export default function ConnectPESChatbot() {
       .then((response) => {
         console.log('Email sent successfully:', response);
         setStep(2);
-        setMessage('Your details have been sent. We will connect you to someone shortly!');
+        setMessage('Your answer has reached the concerned person. Thank you for taking some time out to answer the query!');
       })
       .catch((error) => {
         console.error('Email sending failed:', error);
@@ -47,14 +47,14 @@ export default function ConnectPESChatbot() {
       <div className="grid md:grid-cols-[260px_1fr] min-h-screen w-full">
         <div className="hidden md:flex flex-col side-component p-6 bg-gray-800 shadow-lg rounded-lg">
           <button className="flex items-center justify-start w-full gap-2 px-3 py-2 text-left hover:bg-gray-700 rounded-lg">
-          <a 
-  href="https://nucleusfusion.netlify.app/" 
-  className="flex items-center justify-start w-full gap-2 px-3 py-2 text-left bg-white text-gray-900 hover:bg-gray-100 rounded-lg shadow-md transition-all duration-300"
->
-   <div className="flex items-center justify-center rounded-full w-10 h-10 bg-gray-700">
-              <BotIcon className="w-6 h-6 text-white" />
-            </div>
-            <div className="text-lg font-semibold grow text-ellipsis whitespace-nowrap">nucleusFUSION</div>
+            <a 
+              href="https://nucleusfusion.netlify.app/" 
+              className="flex items-center justify-start w-full gap-2 px-3 py-2 text-left bg-white text-gray-900 hover:bg-gray-100 rounded-lg shadow-md transition-all duration-300"
+            >
+              <div className="flex items-center justify-center rounded-full w-10 h-10 bg-gray-700">
+                <BotIcon className="w-6 h-6 text-white" />
+              </div>
+              <div className="text-lg font-semibold grow text-ellipsis whitespace-nowrap">nucleusFUSION</div>
             </a>
           </button>
           <div className="mt-6 text-gray-400 text-sm leading-relaxed">
@@ -72,7 +72,8 @@ export default function ConnectPESChatbot() {
                   value={formData.name} 
                   onChange={handleChange} 
                   required 
-                  className="mt-1 p-4 w-full border rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 p-4 w-full border-none shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  style={{borderRadius:'50px', height: '60px',width:'900px' }} // Larger input and no border radius
                 />
               </div>
               <div className="w-full">
@@ -82,17 +83,19 @@ export default function ConnectPESChatbot() {
                   value={formData.srn} 
                   onChange={handleChange} 
                   required 
-                  className="mt-1 p-4 w-full border rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 p-4 w-full border-none shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  style={{ borderRadius: '50px', height: '60px',width:'900px' }} // Larger input and no border radius
                 />
               </div>
               <div className="w-full">
-                <label className="block text-sm font-medium text-gray-700">The organization you want additional information for and the information. Please elaborate on the same:</label>
+                <label className="block text-sm font-medium text-gray-700">The organization you require information for. Please elaborate on the type of information you want as well:</label>
                 <input 
                   name="company" 
                   value={formData.company} 
                   onChange={handleChange} 
                   required 
-                  className="mt-1 p-4 w-full border rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 p-4 w-full border-none shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  style={{ borderRadius: '50px', height: '60px',width:'900px' }} // Larger input and no border radius
                 />
               </div>
               <div className="w-full">
@@ -102,7 +105,8 @@ export default function ConnectPESChatbot() {
                   value={formData.contactMethod} 
                   onChange={handleChange} 
                   required 
-                  className="mt-1 p-4 w-full border rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 p-4 w-full border-none shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  style={{ borderRadius: '50px', height: '60px',width:'900px' }} // Larger input and no border radius
                 />
               </div>
               <button 
