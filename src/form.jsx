@@ -167,7 +167,7 @@ const styles = {
     margin: '20px',
   },
   sideComponent: {
-    background: 'linear-gradient(to right, orange, red)',
+    background: 'white';
     padding: '24px',
     display: 'flex',
     flexDirection: 'column',
@@ -204,7 +204,7 @@ const styles = {
     lineHeight: '1.6',
     textAlign: 'center',
     fontWeight: '500',
-    fontFamily: 'Arial, sans-serif',
+    fontFamily: 'Verdana';
   },
   sideImage: {
     borderRadius: '8px',
@@ -250,7 +250,7 @@ const styles = {
   submitButton: {
     width: '40%',
     padding: '12px',
-    background: 'linear-gradient(to right, orange, blue)',
+    background: 'white';
     color: 'white',
     borderRadius: '8px',
     border: 'none',
