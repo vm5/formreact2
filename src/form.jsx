@@ -167,7 +167,7 @@ const styles = {
     margin: '20px',
   },
   sideComponent: {
-    background: 'white';
+    background: 'white',
     padding: '24px',
     display: 'flex',
     flexDirection: 'column',
@@ -250,7 +250,7 @@ const styles = {
   submitButton: {
     width: '40%',
     padding: '12px',
-    background: 'white';
+    background: 'white',
     color: 'white',
     borderRadius: '8px',
     border: 'none',
