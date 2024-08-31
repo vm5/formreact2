@@ -204,7 +204,7 @@ const styles = {
     lineHeight: '1.6',
     textAlign: 'center',
     fontWeight: '500',
-    fontFamily: 'Verdana';
+    fontFamily: 'Verdana',
   },
   sideImage: {
     borderRadius: '8px',
@@ -250,8 +250,8 @@ const styles = {
   submitButton: {
     width: '40%',
     padding: '12px',
-    background: 'white',
-    color: 'white',
+    backgroundColor: '#3182CE', // Updated color for visibility
+    color: '#FFFFFF', // Ensure the text is visible
     borderRadius: '8px',
     border: 'none',
     cursor: 'pointer',
@@ -269,9 +269,10 @@ const styles = {
 
 // CSS Keyframes for the animation
 const styleSheet = document.styleSheets[0];
-styleSheet.insertRule(`
+const keyframes = `
   @keyframes moveBackground {
     0% { background-position: 0% 0%; }
-    100% { background-position: 100% 100%; }
+    100% { background-position: 100% 0%; }
   }
-`, styleSheet.cssRules.length);
+`;
+styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
